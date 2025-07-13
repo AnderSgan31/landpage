@@ -112,7 +112,7 @@ Obrigado! `;
 
         </div>
         <p className="text-sm text-gray-500 mt-1">
-          Envie uma foto ou PDF do comprovante de pagamento PIX, para o nosso WhatsApp
+          Envie uma foto ou PDF do comprovante de pagamento PIX para o nosso WhatsApp
         </p>
       </div>
 

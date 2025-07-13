@@ -143,14 +143,7 @@ const QRCodeGenerator: React.FC<QRCodeGeneratorProps> = ({ pixKey, amount, descr
 
         {/* Chave PIX - POSIÇÃO SECUNDÁRIA */}
         <div className="bg-gray-50 p-3 rounded-lg">
-          <p className="text-sm text-gray-600 mb-1">Chave PIX (referência):</p>
-          <p className="font-mono text-sm font-bold text-gray-800 break-all">{pixKey}</p>
-          <button
-            onClick={() => copyToClipboard(pixKey, 'Chave PIX')}
-            className="mt-2 bg-gray-500 hover:bg-gray-600 text-white px-4 py-2 rounded-lg text-sm transition-colors"
-          >
-            📋 Copiar Chave PIX
-          </button>
+
         </div>
       </div>
 

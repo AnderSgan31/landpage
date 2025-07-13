@@ -111,6 +111,21 @@ const QRCodeGenerator: React.FC<QRCodeGeneratorProps> = ({ pixKey, amount, descr
         />
       </div>
 
+        {/* Código PIX para cópia manual */}
+        <div className="bg-gray-50 p-3 rounded-lg">
+          <p className="text-sm text-gray-600 mb-1">Código PIX (Copia e Cola):</p>
+          <p className="font-mono text-xs text-gray-700 break-all bg-white p-2 rounded border">
+            {pixPayload}
+          </p>
+          <button
+            onClick={() => copyToClipboard(pixPayload, 'Código PIX')}
+            className="mt-2 bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-lg text-sm transition-colors"
+          >
+            📋 Copiar Código PIX
+          </button>
+        </div>
+      </div>
+
       {/* Informações do pagamento */}
       <div className="space-y-3">
         {/* Chave PIX */}
@@ -139,20 +154,6 @@ const QRCodeGenerator: React.FC<QRCodeGeneratorProps> = ({ pixKey, amount, descr
           </div>
         )}
 
-        {/* Código PIX para cópia manual */}
-        <div className="bg-gray-50 p-3 rounded-lg">
-          <p className="text-sm text-gray-600 mb-1">Código PIX (Copia e Cola):</p>
-          <p className="font-mono text-xs text-gray-700 break-all bg-white p-2 rounded border">
-            {pixPayload}
-          </p>
-          <button
-            onClick={() => copyToClipboard(pixPayload, 'Código PIX')}
-            className="mt-2 bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-lg text-sm transition-colors"
-          >
-            📋 Copiar Código PIX
-          </button>
-        </div>
-      </div>
 
       {/* Instruções */}
       <div className="mt-4 p-3 bg-blue-50 border border-blue-200 rounded-lg">

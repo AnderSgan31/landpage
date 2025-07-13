@@ -154,6 +154,7 @@ const QRCodeGenerator: React.FC<QRCodeGeneratorProps> = ({ pixKey, amount, descr
         </p>
       </div>
     </div>
+    </div>
   );
 };
 

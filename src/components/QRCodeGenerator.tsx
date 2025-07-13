@@ -111,7 +111,14 @@ const QRCodeGenerator: React.FC<QRCodeGeneratorProps> = ({ pixKey, amount, descr
         />
       </div>
 
+      {/* Informações do pagamento */}
+      <div className="space-y-3">
+        {/* Chave PIX */}
+        <div className="bg-gray-50 p-3 rounded-lg">
+          <p className="text-sm text-gray-600 mb-1">Chave PIX:</p>
+          <p className="font-mono text-sm font-bold text-gray-800 break-all">{pixKey}</p>
 
+        </div>
 
         {/* Valor */}
         <div className="bg-green-50 p-3 rounded-lg">

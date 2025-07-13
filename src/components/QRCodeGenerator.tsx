@@ -124,7 +124,6 @@ const QRCodeGenerator: React.FC<QRCodeGeneratorProps> = ({ pixKey, amount, descr
             📋 Copiar Código PIX
           </button>
         </div>
-      </div>
 
       {/* Informações do pagamento */}
       <div className="space-y-3">

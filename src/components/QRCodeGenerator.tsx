@@ -46,7 +46,7 @@ const QRCodeGenerator: React.FC<QRCodeGeneratorProps> = ({ pixKey, amount, descr
     const transactionCurrency = formatField('53', '986'); // BRL
     const transactionAmount = amount > 0 ? formatField('54', amount.toFixed(2)) : '';
     const countryCode = formatField('58', 'BR');
-    const merchantName = formatField('59', 'CURSO RESIDENCIA PARAGUAI'.substring(0, 25));
+    const merchantName = formatField('59', 'CURSO RESIDENCIA PELO MIGRAMÓVIL NO PARAGUAI'.substring(0, 25));
     const merchantCity = formatField('60', 'CIDADE DEL ESTE'.substring(0, 15));
 
     // Dados adicionais

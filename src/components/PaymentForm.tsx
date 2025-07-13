@@ -14,20 +14,16 @@ const PaymentForm: React.FC = () => {
     e.preventDefault();
     
     // Criar mensagem para WhatsApp
-    const message = `🇵🇾 *COMPROVANTE - CURSO RESIDÊNCIA PARAGUAI* 🇧🇷
+    const message = `*COMPROVANTE - CURSO RESIDÊNCIA PELO MIGRAMÓVIL PARAGUAI* 
 
-📋 *Dados do Cliente:*
+*Dados do Cliente:*
 • Nome: ${formData.name}
 • Email: ${formData.email}
 • WhatsApp: ${formData.phone || 'Não informado'}
 
-💰 *Pagamento:*
+*Pagamento:*
 • Valor: R$ 397,00
 • Método: PIX
-• Chave: 07433584900
-
-📎 *Comprovante:*
-Segue em anexo o comprovante de pagamento PIX.
 
 Aguardo liberação do acesso ao curso.
 

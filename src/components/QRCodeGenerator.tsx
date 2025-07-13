@@ -113,43 +113,43 @@ const QRCodeGenerator: React.FC<QRCodeGeneratorProps> = ({ pixKey, amount, descr
 
       {/* Informações do pagamento */}
       <div className="space-y-3">
-        {/* Chave PIX */}
-        <div className="bg-gray-50 p-3 rounded-lg">
-          <p className="text-sm text-gray-600 mb-1">Chave PIX:</p>
-          <p className="font-mono text-sm font-bold text-gray-800 break-all">{pixKey}</p>
-          <button
-            onClick={() => copyToClipboard(pixKey, 'Chave PIX')}
-            className="mt-2 bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-lg text-sm transition-colors"
-          >
-            📋 Copiar Chave PIX
-          </button>
-        </div>
-
-        {/* Valor */}
-        <div className="bg-green-50 p-3 rounded-lg">
-          <p className="text-sm text-gray-600 mb-1">Valor:</p>
-          <p className="text-2xl font-bold text-green-600">R$ {amount.toFixed(2)}</p>
-        </div>
-
-        {/* Descrição */}
-        {description && (
-          <div className="bg-blue-50 p-3 rounded-lg">
-            <p className="text-sm text-gray-600 mb-1">Descrição:</p>
-            <p className="text-sm font-medium text-blue-800">{description}</p>
-          </div>
-        )}
-
-        {/* Código PIX para cópia manual */}
-        <div className="bg-gray-50 p-3 rounded-lg">
-          <p className="text-sm text-gray-600 mb-1">Código PIX (Copia e Cola):</p>
+        {/* Código PIX para cópia manual - POSIÇÃO PRINCIPAL */}
+        <div className="bg-green-50 p-3 rounded-lg border-2 border-green-200">
+          <p className="text-sm text-green-700 mb-1 font-semibold">Código PIX (Copia e Cola):</p>
           <p className="font-mono text-xs text-gray-700 break-all bg-white p-2 rounded border">
             {pixPayload}
           </p>
           <button
             onClick={() => copyToClipboard(pixPayload, 'Código PIX')}
-            className="mt-2 bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-lg text-sm transition-colors"
+            className="mt-2 bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-lg text-sm transition-colors font-semibold"
           >
             📋 Copiar Código PIX
+          </button>
+        </div>
+
+        {/* Valor */}
+        <div className="bg-blue-50 p-3 rounded-lg">
+          <p className="text-sm text-gray-600 mb-1">Valor:</p>
+          <p className="text-2xl font-bold text-blue-600">R$ {amount.toFixed(2)}</p>
+        </div>
+
+        {/* Descrição */}
+        {description && (
+          <div className="bg-purple-50 p-3 rounded-lg">
+            <p className="text-sm text-gray-600 mb-1">Descrição:</p>
+            <p className="text-sm font-medium text-purple-800">{description}</p>
+          </div>
+        )}
+
+        {/* Chave PIX - POSIÇÃO SECUNDÁRIA */}
+        <div className="bg-gray-50 p-3 rounded-lg">
+          <p className="text-sm text-gray-600 mb-1">Chave PIX (referência):</p>
+          <p className="font-mono text-sm font-bold text-gray-800 break-all">{pixKey}</p>
+          <button
+            onClick={() => copyToClipboard(pixKey, 'Chave PIX')}
+            className="mt-2 bg-gray-500 hover:bg-gray-600 text-white px-4 py-2 rounded-lg text-sm transition-colors"
+          >
+            📋 Copiar Chave PIX
           </button>
         </div>
       </div>

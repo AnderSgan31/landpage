@@ -47,12 +47,12 @@ Obrigado! `;
     return (
       <div className="bg-green-50 border border-green-200 rounded-xl p-8 text-center">
         <CheckCircle className="w-16 h-16 text-green-500 mx-auto mb-4" />
-        <h3 className="text-2xl font-bold text-green-800 mb-2">Pagamento Recebido!</h3>
+        <h3 className="text-2xl font-bold text-green-800 mb-2">Continua no WhatsApp!</h3>
         <p className="text-green-700 mb-4">
-          Obrigado pelo seu pagamento. Você receberá o acesso ao curso em até 24 horas no email informado.
+          Obrigado pelo seu pagamento. Você receberá o acesso ao curso em até 24 horas no WhatsApp Informado.
         </p>
         <p className="text-sm text-green-600">
-          Verifique também sua caixa de spam caso não receba o email.
+          Caso o WhatsApp não tenha Abrido entre em contato com este Numero + 595 97555 1881
         </p>
       </div>
     );

@@ -109,7 +109,7 @@ Obrigado! `;
         </label>
         <div className="relative">
 
-          <Upload className="absolute right-3 top-2.5 h-5 w-5 text-gray-400" />
+
         </div>
         <p className="text-sm text-gray-500 mt-1">
           Envie uma foto ou PDF do comprovante de pagamento PIX

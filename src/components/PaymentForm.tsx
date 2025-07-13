@@ -27,7 +27,7 @@ const PaymentForm: React.FC = () => {
 
 Aguardo liberação do acesso ao curso.
 
-Obrigado! 🙏`;
+Obrigado! `;
 
     // Abrir WhatsApp
     const phoneNumber = '595975551881'; // Substitua pelo seu número

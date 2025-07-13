@@ -105,7 +105,7 @@ Obrigado! `;
 
       <div>
         <label className="block text-sm font-medium text-gray-700 mb-2">
-          Comprovante de Pagamento s*
+          Comprovante de Pagamento *
         </label>
         <div className="relative">
           <input

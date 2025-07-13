@@ -49,7 +49,7 @@ Obrigado! `;
         <CheckCircle className="w-16 h-16 text-green-500 mx-auto mb-4" />
         <h3 className="text-2xl font-bold text-green-800 mb-2">Continua no WhatsApp!</h3>
         <p className="text-green-700 mb-4">
-          Obrigado pelo seu pagamento. Você receberá o acesso ao curso em até 24 horas no WhatsApp Informado.
+          Obrigado pelo seu pagamento. Você receberá o acesso ao curso em Breve no WhatsApp Informado.
         </p>
         <p className="text-sm text-green-600">
           Caso o WhatsApp não tenha Abrido entre em contato com este Numero + 595 97555 1881

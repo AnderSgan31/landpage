@@ -155,13 +155,13 @@ const App = () => {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
               <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/20">
                 <TrendingUp className="w-8 h-8 text-green-400 mx-auto mb-4" />
-                <h3 className="text-xl font-bold mb-2">+500 Aprovados</h3>
+                <h3 className="text-xl font-bold mb-2">+120 Aprovados</h3>
                 <p className="text-gray-300">Brasileiros já conseguiram residência</p>
               </div>
               
               <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/20">
                 <Award className="w-8 h-8 text-blue-400 mx-auto mb-4" />
-                <h3 className="text-xl font-bold mb-2">95% Sucesso</h3>
+                <h3 className="text-xl font-bold mb-2">100% Sucesso</h3>
                 <p className="text-gray-300">Taxa de aprovação dos nossos alunos</p>
               </div>
               

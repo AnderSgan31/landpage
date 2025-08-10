@@ -129,7 +129,7 @@ const App = () => {
             
             <p className="text-lg text-gray-400 mb-8 max-w-3xl mx-auto">
               Aprenda como obter sua residência no Paraguai por conta própria com nosso curso de apenas <span className="text-green-400 font-bold">R$ 397</span> 
-              ao invés de pagar <span className="text-red-400 font-bold line-through">R$ 10.000 - R$ 20.000</span> para despachantes
+               ao invés de pagar <span className="text-red-400 font-bold line-through">R$ 10.000 - R$ 20.000</span> para despachantes
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8">
